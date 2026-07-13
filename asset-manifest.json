@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/nullsudoku/static/css/main.b1a3cc22.css",
-    "main.js": "/nullsudoku/static/js/main.18895e97.js",
-    "index.html": "/nullsudoku/index.html",
-    "main.b1a3cc22.css.map": "/nullsudoku/static/css/main.b1a3cc22.css.map",
-    "main.18895e97.js.map": "/nullsudoku/static/js/main.18895e97.js.map"
+    "main.css": "https://kinnnine.github.io/nullsudoku/static/css/main.b1a3cc22.css",
+    "main.js": "https://kinnnine.github.io/nullsudoku/static/js/main.b1ed26b2.js",
+    "index.html": "https://kinnnine.github.io/nullsudoku/index.html",
+    "main.b1a3cc22.css.map": "https://kinnnine.github.io/nullsudoku/static/css/main.b1a3cc22.css.map",
+    "main.b1ed26b2.js.map": "https://kinnnine.github.io/nullsudoku/static/js/main.b1ed26b2.js.map"
   },
   "entrypoints": [
     "static/css/main.b1a3cc22.css",
-    "static/js/main.18895e97.js"
+    "static/js/main.b1ed26b2.js"
   ]
 }
