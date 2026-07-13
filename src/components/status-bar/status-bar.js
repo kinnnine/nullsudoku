@@ -10,7 +10,7 @@ import './status-bar.css';
 const stopPropagation = (e) => e.stopPropagation();
 
 
-function SiteLink () {
+function SiteLink() {
     return (
         <div className="site-link">
             <a href="https://sudokuexchange.com/">
@@ -22,7 +22,7 @@ function SiteLink () {
     );
 }
 
-function StatusBar ({
+function StatusBar({
     showTimer, startTime, intervalStartTime, endTime, pausedAt, hintsUsedCount,
     showPencilmarks, menuHandler, pauseHandler, initialDigits
 }) {
@@ -40,7 +40,7 @@ function StatusBar ({
         : null;
     return (
         <div className="status-bar" onMouseDown={stopPropagation}>
-            <SiteLink />
+            {/* <SiteLink /> */}
             {timer}
             <div className="status-bar-buttons">
                 <FullscreenButton />
