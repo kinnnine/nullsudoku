@@ -1,19 +1,20 @@
 {
-  "name": "sudoku-web-app",
-  "version": "1.0.32",
-  "description": "A web application for solving & sharing Sudoku puzzles. Created for SudokuExchange.com",
-  "author": {
-    "name": "Grant McLean",
-    "email": "grant@mclean.net.nz",
-    "url": "https://grantm.github.io/"
+  "name": "nullsudoku",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "react-scripts start"
   },
-  "license": "AGPLV3",
-  "repository": "github:grantm/sudoku-web-app",
-  "bugs": "https://github.com/grantm/sudoku-web-app/issues",
-  "keywords": [
-    "sudoku"
-  ],
-  "private": true,
+  "keywords": [],
+  "author": "",
+  "license": "AGPL-3.0-only",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.12.0",
+      "onFail": "download"
+    }
+  },
   "dependencies": {
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "13.4.0",
@@ -24,16 +25,6 @@
     "react-dom": "18.2.0",
     "react-scripts": "5.0.1",
     "save-svg-as-png": "1.4.17"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint": "eslint --ext .js src"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [
@@ -46,7 +37,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "homepage": ".",
-  "proxy": "http://sudokuexchange.localhost:1080"
+  }
 }
