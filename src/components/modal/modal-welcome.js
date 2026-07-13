@@ -92,13 +92,13 @@ function ModalWelcome({modalState, modalHandler}) {
     const {savedPuzzles} = modalState;
     const cancelHandler = () => modalHandler('cancel');
     const showPasteHandler = () => modalHandler('show-paste-modal');
-    const twitterUrl = "https://twitter.com/SudokuExchange";
+    const SudokuExchangeUrl = "https://sudokuexchange.com";
     const orRestoreMsg = (savedPuzzles && savedPuzzles.length > 0)
         ? ", or return to a puzzle you started previously"
         : "";
     return (
         <div className="modal welcome">
-            <h1>Welcome to SudokuExchange</h1>
+            <h1>NullSudoku</h1>
             <p>You can get started by entering a new puzzle into a blank grid{orRestoreMsg}:</p>
             <div className="primary-buttons">
                 <span>
@@ -110,7 +110,7 @@ function ModalWelcome({modalState, modalHandler}) {
             <p>Or you can select a recently shared puzzle:</p>
             <RecentlyShared modalState={modalState} />
             <div id="welcome-footer">
-                <p>Follow <a href={twitterUrl} target="_blank" rel="noreferrer">@SudokuExchange</a> on Twitter for updates.</p>
+                <p>Fork of <a href={SudokuExchangeUrl} target="_blank" rel="noreferrer">SudokuExchange.com</a> but with extra features.</p>
             </div>
         </div>
     );
