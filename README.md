@@ -1,3 +1,9 @@
+# NullSudoku
+
+A project based on [Grant McLean's](https://github.com/grantm) Sudoku web app (SudokuExchange.com) but with extra features and more customization.
+
+### Original Readme
+
 This project implements the Sudoku web app used on [SudokuExchange.com](https://sudokuexchange.com).
 
 Features include:
