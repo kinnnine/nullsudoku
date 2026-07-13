@@ -1,12 +1,16 @@
 {
   "name": "nullsudoku",
   "version": "1.0.0",
-  "description": "",
+  "description": "Fork of SudokuExchange.com with extra features.",
+  "homepage": "https://kinnnine.github.io/nullsudoku",
   "scripts": {
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [ "sudoku", "offline", "player", "solver" ],
+  "author": "kinnnine",
   "license": "AGPL-3.0-only",
   "devEngines": {
     "packageManager": {
@@ -21,8 +25,8 @@
     "@testing-library/user-event": "14.4.3",
     "immutable": "4.1.0",
     "qrcode.react": "3.1.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "18.3.0",
+    "react-dom": "18.3.0",
     "react-scripts": "5.0.1",
     "save-svg-as-png": "1.4.17"
   },
