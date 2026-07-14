@@ -107,7 +107,7 @@ function ModalWelcome({modalState, modalHandler}) {
                     <SavedPuzzlesButton savedPuzzles={savedPuzzles} modalHandler={modalHandler} />
                 </span>
             </div>
-            <p>Or you can select a recently shared puzzle:</p>
+            <p>Or you can select a daily datasets below:</p>
             <RecentlyShared modalState={modalState} />
             <div id="welcome-footer">
                 <p>Fork of <a href={SudokuExchangeUrl} target="_blank" rel="noreferrer">SudokuExchange.com</a> but with extra features.</p>
