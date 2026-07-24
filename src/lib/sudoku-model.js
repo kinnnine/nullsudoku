@@ -27,6 +27,9 @@ import {
 
 export const SETTINGS = {
     darkMode: "dark-mode",
+    customCss: "custom-css",
+    hideNumbericKeys: "hide-numberic-keys",
+    alignCanvasPosition: "align-canvas-position",
     showTimer: "show-timer",
     simplePencilMarking: 'simple-pencil-marking',
     outlineSelection: "outline-selection",
@@ -144,6 +147,9 @@ export const modelHelpers = {
     CENTER_CELL: 40,
     DEFAULT_SETTINGS: {
         [SETTINGS.darkMode]: false,
+        [SETTINGS.customCss]: false,
+        [SETTINGS.hideNumbericKeys]: false,
+        [SETTINGS.alignCanvasPosition]: 0,
         [SETTINGS.showTimer]: true,
         [SETTINGS.simplePencilMarking]: false,
         [SETTINGS.outlineSelection]: false,

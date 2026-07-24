@@ -363,6 +363,14 @@ input.toggle:checked+.indicator::before {
     background-color: var(--input-toggle-on-color);
 }
 
+select.selection {
+    position: absolute;
+    width: 80px;
+    height: 25px;
+    top: 0;
+    right: 0;
+}
+
 .modal-container .modal.features {
     max-width: min(26em, 94vw);
 }

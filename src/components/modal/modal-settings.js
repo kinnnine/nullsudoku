@@ -21,6 +21,27 @@ function CheckBoxSetting ({name, text, allSettings, setSetting}) {
     );
 }
 
+function SelectionSetting ({name, text, allSettings, setSetting, options}) {
+    const currValue = allSettings[name];
+    return (
+        <li>
+            <label>
+                {text}
+                <select
+                    className="selection"
+                    onChange={(e) => setSetting(name, Number(e.target.value))}
+                >
+                    {options.map((opt) => (
+                        <option key={opt.value} value={opt.value} selected={currValue == opt.value}>
+                            {opt.label}
+                        </option>
+                    ))}
+                </select>
+            </label>
+        </li>
+    );
+}
+
 export default function ModalSettings({modalHandler, modalState}) {
     const [allSettings, setAllSettings] = useState(modalState.currentSettings);
     const setSetting = useCallback(
@@ -44,6 +65,29 @@ export default function ModalSettings({modalHandler, modalState}) {
                     text="Dark mode"
                     allSettings={allSettings}
                     setSetting={setSetting}
+                />
+                <CheckBoxSetting
+                    name={SETTINGS.customCss}
+                    text="Custom CSS"
+                    allSettings={allSettings}
+                    setSetting={setSetting}
+                />
+                <CheckBoxSetting
+                    name={SETTINGS.hideNumbericKeys}
+                    text="Hide on-screen keyboard digits"
+                    allSettings={allSettings}
+                    setSetting={setSetting}
+                />
+                <SelectionSetting
+                    name={SETTINGS.alignCanvasPosition}
+                    text="Align canvas position"
+                    allSettings={allSettings}
+                    setSetting={setSetting}
+                    options={[
+                        { value: "0", label: "Left"},
+                        { value: "1", label: "Right"},
+                        { value: "2", label: "Center"}
+                    ]}
                 />
                 <CheckBoxSetting
                     name={SETTINGS.showTimer}
