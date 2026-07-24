@@ -5,7 +5,14 @@ A project based on [Grant McLean's](https://github.com/grantm) [Sudoku web app (
 Almost all the features from original source code still remains, but there are some noticeable changes:
 
 * Fully working offline when installed as [PWA](https://en.wikipedia.org/wiki/Progressive_web_app) (Thanks to [Workbox](https://web.dev/learn/pwa/workbox))
-* NullSudoku's puzzle daily datasets (Replacing SudokuExchange's recently shared puzzle, still WIP) 
+
+Not yet implemented features:
+
+* Hint (Locally with JavaScript version of [QQWing](https://qqwing.com/solve.html))
+* NullSudoku's puzzle daily datasets (Replacing SudokuExchange's recently shared puzzle, still WIP)
+* Hideable on-screen numeric keys
+* User's custom CSS
+* Stylus pen writing support
 
 # Copyright and License
 
